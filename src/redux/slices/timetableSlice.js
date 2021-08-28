@@ -2,7 +2,7 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable no-param-reassign */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import getTimetable from '../../api/requests';
+import { getTimetable } from '../../api/requests';
 
 export const fetchTimetable = createAsyncThunk(
   'timetable/fetchTimetable',

@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import './App.scss';
 import Timetable from './pages/TimeTablePage/TimeTable';
+import LoginPage from './pages/LoginPage/LoginPage';
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             Landing Page
+          </Route>
+          <Route exact path="/register">
+            <LoginPage />
           </Route>
           <Route exact path="/timetable">
             <Timetable />
