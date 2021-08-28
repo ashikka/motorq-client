@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+body,html{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: $font;
+  overflow-x: hidden;
+  background-image: url(./assets/bg.jpg);
+  // background-color: #1C1D1F;
+  background-size: cover;
+  color: #fafafa;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+.text-white{
+  color: white;
+}
