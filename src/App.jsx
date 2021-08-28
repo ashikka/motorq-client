@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import './App.scss';
+import Timetable from './pages/TimeTablePage/TimeTable';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
             Landing Page
           </Route>
           <Route exact path="/timetable">
-            Timetable
+            <Timetable />
           </Route>
           <Route exact path="/maps">
             Maps

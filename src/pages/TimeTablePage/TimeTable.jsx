@@ -1,6 +1,6 @@
 import { React, useEffect } from 'react';
 import './TimeTable.scss';
-import { useSelector, useDispatch } from 'redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { fetchTimetable } from '../../redux/slices/timetableSlice';
 
 const Timetable = () => {
@@ -8,7 +8,7 @@ const Timetable = () => {
   const timetable = useSelector((state) => state.timetable);
   console.log(timetable);
   useEffect(() => {
-    dispatch(fetchTimetable()); 
+    dispatch(fetchTimetable());
   }, [dispatch]);
 
   return (
