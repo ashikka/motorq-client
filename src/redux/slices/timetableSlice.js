@@ -28,7 +28,8 @@ const timetableSlice = createSlice({
   },
   extraReducers: {
     [fetchTimetable.fulfilled]: (state, action) => {
-      state.timetable = action.payload.timetable;
+      console.log(state, action.payload);
+      state.timetable = action.payload.data;
     },
   },
 });
