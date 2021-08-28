@@ -30,6 +30,8 @@ const timetableSlice = createSlice({
     [fetchTimetable.fulfilled]: (state, action) => {
       console.log(state, action.payload);
       state.timetable = action.payload.data;
+
+      return state;
     },
   },
 });
