@@ -17,3 +17,8 @@ export const register = async (regNo, name) => {
   });
   return res.data;
 };
+
+export const getClasses = async (courseCode) => {
+  const res = await api.get(`/classes/classes-on-map/${courseCode}`);
+  return res.data;
+};
