@@ -1,7 +1,7 @@
 import { React, useEffect } from 'react';
 import './MapPage.scss';
 import {
-  Row, Col,
+  Row,
 } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
@@ -27,16 +27,16 @@ const MapPage = () => {
   }, [courseCode]);
   console.log(data);
   return (
-    <Row className="h-100 justify-content-center align-items-center">
-      <Col sm={5}>
-        <h1>Map</h1>
-        {data
+    <Row className="h-50 justify-content-center align-items-center">
+      <h1 className="mb-5 mt-5">Map</h1>
+      {/* <Col> */}
+      {data
         && (
         <MapContainer
           className="markercluster-map"
           center={[51.0, 19.0]}
           zoom={4}
-          style={{ height: 500, width: 500 }}
+          style={{ height: 700, width: 1000 }}
           maxZoom={18}
         >
           <TileLayer
@@ -84,7 +84,7 @@ const MapPage = () => {
           </MarkerClusterGroup>
         </MapContainer>
         )}
-      </Col>
+      {/* </Col> */}
     </Row>
   );
 };

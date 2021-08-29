@@ -5,7 +5,7 @@ import { Card, Col } from 'react-bootstrap';
 import './timetableCard.scss';
 
 const TimetableCard = (props) => (
-  <Col lg={4} md={6} s={12} className="d-flex justify-content-center align-items-center">
+  <Col lg={4} className="d-flex justify-content-center align-items-center">
     <Card
       className="card text-center alphabet-card"
     >

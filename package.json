@@ -22,6 +22,7 @@
     "react-scripts": "4.0.3",
     "redux": "^4.1.1",
     "sass": "^1.38.2",
+    "sweetalert": "^2.1.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -40,9 +41,9 @@
   },
   "browserslist": [
     ">0.2%",
-   "not dead",
-   "not op_mini all"
- ],
+    "not dead",
+    "not op_mini all"
+  ],
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
