@@ -32,6 +32,10 @@ export const addCourse = async (courseDetails, rollNo) => {
   const res = await api.post(`/classes/${rollNo}`, {
     courseDetails,
   });
-  console.log(res);
+  return res;
+};
+
+export const deleteCourse = async (rollNo, id) => {
+  const res = await api.post(`/classes/${rollNo}/${id}`);
   return res;
 };

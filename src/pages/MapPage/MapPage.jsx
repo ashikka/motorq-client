@@ -25,7 +25,6 @@ const MapPage = () => {
       getClass(courseCode);
     }
   }, [courseCode]);
-  console.log(data);
   return (
     <Row className="h-50 justify-content-center align-items-center">
       <h1 className="mb-5 mt-5">Map</h1>

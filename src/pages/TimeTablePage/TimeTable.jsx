@@ -13,6 +13,7 @@ function createCard(data) {
       key={data.id}
       time={data.time}
       courseCode={data.courseCode}
+      courseName={data.courseName}
       faculty={data.faculty}
       building={data.building}
     />
