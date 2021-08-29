@@ -8,18 +8,26 @@ import courses from '../../assets/courses.jpg';
 
 const LandingPage = () => (
   <>
-    <Row>
-      <Col className="d-flex-column">
-        <img src={timetable} alt="timetable" />
-        <Link to="/timetable/19BCE2022"><Button className="mx-3 mt-5" variant="outline-secondary">Timetable</Button></Link>
+    <Row className="my-5">
+      <h1 className="my-5">Select your choice</h1>
+      <Col>
+        <div className="d-flex flex-column justify-content-center align-items-center">
+          <img src={timetable} alt="timetable" />
+          <Link to="/timetable/19BCE2022"><Button className="mx-3 mt-5" variant="outline-secondary">Timetable</Button></Link>
+        </div>
+
       </Col>
       <Col>
-        <img src={map} alt="map" />
-        <Link to="/courses/CSE1003"><Button className="mx-3 mt-5" variant="outline-secondary">Courses</Button></Link>
+        <div className="d-flex flex-column justify-content-center align-items-center">
+          <img src={courses} alt="map" />
+          <Link to="/courses/CSE1003"><Button className="mx-3 mt-5" variant="outline-secondary">Courses</Button></Link>
+        </div>
       </Col>
       <Col>
-        <img src={courses} alt="courses" />
-        <Link to="/maps/CSE1003"><Button className="mx-3 mt-5" variant="outline-secondary">Map</Button></Link>
+        <div className="d-flex flex-column justify-content-center align-items-center">
+          <img src={map} alt="courses" />
+          <Link to="/maps/CSE1003"><Button className="mx-3 mt-5" variant="outline-secondary">Map</Button></Link>
+        </div>
       </Col>
     </Row>
   </>

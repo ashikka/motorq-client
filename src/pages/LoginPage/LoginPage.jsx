@@ -35,6 +35,7 @@ const LoginPage = () => {
 
   return (
     <Row className="h-100 justify-content-center align-items-center">
+      <h1 className="my-5">Hello! Happy to see you here.</h1>
       <Col sm={5} className="form-container p-5 mx-5">
         <h1>Login</h1>
         <Form className="mt-5 px-5">
