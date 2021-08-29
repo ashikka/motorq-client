@@ -8,9 +8,6 @@ import LandingPage from './pages/LandingPage/LandingPage';
 import MapPage from './pages/MapPage/MapPage';
 import CoursePage from './pages/CoursePage/CoursePage';
 
-require('../node_modules/leaflet/dist/leaflet.css'); // inside .js file
-require('../node_modules/react-leaflet-markercluster/dist/styles.min.css'); // inside .js file
-
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
