@@ -34,7 +34,7 @@ const Timetable = () => {
 
   return (
     <>
-      <Row>
+      <Row className="justify-content-center">
         <h1>Timetable</h1>
         {(timetable.timetable.classes)
           ? timetable.timetable.classes.map(createCard)

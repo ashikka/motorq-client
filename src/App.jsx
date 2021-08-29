@@ -14,11 +14,10 @@ function App() {
       <Container fluid className="App">
         <Switch>
           <Route exact path="/">
+            <LoginPage />
             <LandingPage />
           </Route>
-          <Route exact path="/register">
-            <LoginPage />
-          </Route>
+          <Route exact path="/home" />
           <Route exact path="/timetable/:rollNo">
             <Timetable />
           </Route>
