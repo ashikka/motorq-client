@@ -28,4 +28,10 @@ export const getCourses = async (courseCode) => {
   return res.data;
 };
 
-export const addCourse = async () => {};
+export const addCourse = async (courseDetails, rollNo) => {
+  const res = await api.post(`/classes/${rollNo}`, {
+    courseDetails,
+  });
+  console.log(res);
+  return res;
+};

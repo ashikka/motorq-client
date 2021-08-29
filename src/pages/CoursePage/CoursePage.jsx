@@ -8,7 +8,6 @@ import { getCoursesThunk } from '../../redux/slices/courseSlice';
 import CoursePageCard from '../../components/coursePageCard';
 
 function createCard(data) {
-  console.log(data);
   return (
     <CoursePageCard
       key={data.id}
@@ -36,7 +35,7 @@ const CoursePage = () => {
   return (
     <>
       <Row className="justify-content-center">
-        <h1>Courses</h1>
+        <h1 className="mb-5">Courses</h1>
         {(courses.data)
           ? courses.data.classes.map(createCard)
           : <></>}

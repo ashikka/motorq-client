@@ -6,14 +6,18 @@ body,html,.App {
   height: 100vh;
   font-family: $font;
   overflow-x: hidden;
-  background-image: url(./assets/bg.jpg);
-  // background-color: #1C1D1F;
+  background-color: #fff;
   background-size: cover;
-  color: #fafafa;
+  color: black;
   text-align: center;
   scroll-behavior: smooth;
 }
 
 .text-white{
-  color: white;
+  color: black;
+}
+
+h1{
+  color: #663FD6;
+  font-weight: bold;
 }

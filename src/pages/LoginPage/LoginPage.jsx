@@ -35,19 +35,19 @@ const LoginPage = () => {
 
   return (
     <Row className="h-100 justify-content-center align-items-center">
-      <Col sm={5}>
+      <Col sm={5} className="form-container p-5 mx-5">
         <h1>Login</h1>
         <Form className="mt-5 px-5">
           <Form.Group className="mb-3" controlId="formBasicRegNo">
             <Form.Label>Reg No</Form.Label>
             <Form.Control type="text" placeholder="Enter Reg No" value={loginRegNo} onChange={(e) => setLoginRegNo(e.target.value)} />
           </Form.Group>
-          <Button onClick={(e) => { e.preventDefault(); doLogin(loginRegNo); }} className="mt-5" variant="primary" type="submit">
+          <Button variant="outline-secondary" onClick={(e) => { e.preventDefault(); doLogin(loginRegNo); }} className="mt-5" type="submit">
             Login
           </Button>
         </Form>
       </Col>
-      <Col sm={5}>
+      <Col sm={5} className="form-container p-5">
         <h1>Register</h1>
         <Form className="mt-5 px-5">
           <Form.Group className="mb-3" controlId="formBasicRegNo" value={registerRegNo} onChange={(e) => setRegisterRegNo(e.target.value)}>
@@ -58,7 +58,7 @@ const LoginPage = () => {
             <Form.Label>Name</Form.Label>
             <Form.Control type="text" placeholder="Enter Name" value={registerName} onChange={(e) => setRegisterName(e.target.value)} />
           </Form.Group>
-          <Button onClick={(e) => { e.preventDefault(); doRegister(registerRegNo, registerName); }} className="mt-5" variant="primary" type="submit">
+          <Button variant="outline-secondary" onClick={(e) => { e.preventDefault(); doRegister(registerRegNo, registerName); }} className="mt-5" type="submit">
             Register
           </Button>
         </Form>
