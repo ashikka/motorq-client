@@ -1,7 +1,7 @@
 import { api } from './api';
 
-export const getTimetable = async () => {
-  const res = await api.get('/classes/student/19BCE2022');
+export const getTimetable = async (rollNo) => {
+  const res = await api.get(`/classes/student/${rollNo}`);
   return res.data;
 };
 

@@ -7,8 +7,8 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import LandingPage from './pages/LandingPage/LandingPage';
 import MapPage from './pages/MapPage/MapPage';
 
-require('leaflet/dist/leaflet.css'); // inside .js file
-require('react-leaflet-markercluster/dist/styles.min.css'); // inside .js file
+require('../node_modules/leaflet/dist/leaflet.css'); // inside .js file
+require('../node_modules/react-leaflet-markercluster/dist/styles.min.css'); // inside .js file
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route exact path="/register">
             <LoginPage />
           </Route>
-          <Route exact path="/timetable">
+          <Route exact path="/timetable/:rollNo">
             <Timetable />
           </Route>
           <Route exact path="/maps/:courseCode">

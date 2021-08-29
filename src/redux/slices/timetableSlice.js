@@ -6,9 +6,8 @@ import { getTimetable } from '../../api/requests';
 
 export const fetchTimetable = createAsyncThunk(
   'timetable/fetchTimetable',
-  async () => {
-    const response = await getTimetable();
-    console.log(response);
+  async (payload) => {
+    const response = await getTimetable(payload.rollNo);
     return response;
   },
 );
@@ -22,13 +21,9 @@ const timetableSlice = createSlice({
   },
 
   reducers: {
-    addTimetable: (state, action) => {
-      state.timetable = action.payload.timetable;
-    },
   },
   extraReducers: {
     [fetchTimetable.fulfilled]: (state, action) => {
-      console.log(state, action.payload);
       state.timetable = action.payload.data;
 
       return state;

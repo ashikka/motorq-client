@@ -9,13 +9,27 @@ const TimetableCard = (props) => (
     <Card
       className="card text-center alphabet-card"
     >
-      <Card.Body className="alphabet-card-body">
+      <Card.Body>
         <Card.Title className="text-center card-title">
           {props.courseCode}
         </Card.Title>
-        {props.time}
-        {props.faculty}
-        {props.building}
+        <p>
+          Time:
+          {' '}
+          {props.time}
+        </p>
+        <p>
+          Faculty:
+          {' '}
+          {props.faculty}
+        </p>
+        {' '}
+        <p>
+          Building:
+          {' '}
+          {props.building}
+        </p>
+
       </Card.Body>
     </Card>
   </Col>
