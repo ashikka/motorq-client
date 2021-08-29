@@ -20,25 +20,3 @@
     overflow-y: auto;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 6px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    border-radius: 16px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #414141; 
-    border-radius: 16px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-   
-    .distro-names{
-      font-size: small;
-    }
-}

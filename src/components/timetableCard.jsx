@@ -11,10 +11,7 @@ const TimetableCard = (props) => (
     >
       <Card.Body className="alphabet-card-body">
         <Card.Title className="text-center card-title">
-          <u>
-            {props.courseCode}
-
-          </u>
+          {props.courseCode}
         </Card.Title>
         {props.time}
         {props.faculty}
