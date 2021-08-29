@@ -1,26 +1,25 @@
-[![csivit][csivitu-shield]][csivitu-url]
 [![Issues][issues-shield]][issues-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/csivitu/Template">
-    <img src="https://csivit.com/images/favicon.png" alt="Logo" width="80">
+  <a href="https://github.com/ashikka/motorq-client">
+    <img src="https://github.com/ashikka/motorq-service/blob/master/assets/logo.png?raw=true" alt="Logo" width="150">
   </a>
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center">motorq-client</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    Course registration and Timetable management system to make your student life easier!
     <br />
-    <a href="https://github.com/csivitu/Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ashikka/motorq-client"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/csivitu/Template">View Demo</a>
+    <a href="https://github.com/ashikka/motorq-client">View Demo</a>
     ·
-    <a href="https://github.com/csivitu/Template/issues">Report Bug</a>
+    <a href="https://github.com/ashikka/motorq-client/issues">Report Bug</a>
     ·
-    <a href="https://github.com/csivitu/Template/issues">Request Feature</a>
+    <a href="https://github.com/ashikka/motorq-client/issues">Request Feature</a>
   </p>
 </p>
 
@@ -45,18 +44,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Making a good timetalble while taking care of clashes is a mess! This application was made to take care of that automatically for you. You can build your timetable, check for clashes and even render a map showing the distance between all the classes! Now managing your timetable is so easy!
+You can find the demo video [here](https://www.loom.com/share/b4bea88deefe433baa38d1dffe4017af)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`Template`
 
 
 ### Built With
-
-* []()
-* []()
-* []()
+* [react](https://reactjs.org)
+* [redux](https://www.npmjs.com/package/redux)
+* [axios](https://www.npmjs.com/package/axios)
+* [react-bootstrap](https://www.npmjs.com/package/react-bootstrap)
+* [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+* [react-dom](https://www.npmjs.com/package/react-dom)
 
 
 
@@ -77,11 +76,18 @@ npm install npm@latest -g
  
 1. Clone the repo
 ```sh
-git clone https://github.com/csivitu/Template.git
+git clone https://github.com/ashikka/motorq-client.git
 ```
 2. Install NPM packages
 ```sh
 npm install
+```
+
+3. Add the necessary environment variables to a `.env` file.
+```sh
+{
+        echo '  REACT_APP_BACKEND_URL='
+} >> .env
 ```
 
 
@@ -89,16 +95,18 @@ npm install
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+To run the project use:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+```sh
+npm start
+```
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/csivitu/Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/ashikka/motorq-client/issues) for a list of proposed features (and known issues).
 
 
 
@@ -128,4 +136,4 @@ Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more informati
 [csivitu-shield]: https://img.shields.io/badge/csivitu-csivitu-blue
 [csivitu-url]: https://csivit.com
 [issues-shield]: https://img.shields.io/github/issues/csivitu/Template.svg?style=flat-square
-[issues-url]: https://github.com/csivitu/Template/issues
+[issues-url]: https://github.com/ashikka/motorq-client/issues
