@@ -6,6 +6,7 @@ import Timetable from './pages/TimeTablePage/TimeTable';
 import LoginPage from './pages/LoginPage/LoginPage';
 import LandingPage from './pages/LandingPage/LandingPage';
 import MapPage from './pages/MapPage/MapPage';
+import CoursePage from './pages/CoursePage/CoursePage';
 
 require('../node_modules/leaflet/dist/leaflet.css'); // inside .js file
 require('../node_modules/react-leaflet-markercluster/dist/styles.min.css'); // inside .js file
@@ -27,8 +28,8 @@ function App() {
           <Route exact path="/maps/:courseCode">
             <MapPage />
           </Route>
-          <Route exact path="/courses">
-            Add and drop
+          <Route exact path="/courses/:courseCode">
+            <CoursePage />
           </Route>
         </Switch>
       </Container>

@@ -22,3 +22,8 @@ export const getClasses = async (courseCode) => {
   const res = await api.get(`/classes/classes-on-map/${courseCode}`);
   return res.data;
 };
+
+export const getCourses = async (courseCode) => {
+  const res = await api.get(`/classes/${courseCode}`);
+  return res.data;
+};
